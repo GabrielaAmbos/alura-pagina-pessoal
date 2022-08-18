@@ -1,0 +1,34 @@
+body {
+  background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p1/5247862-fundo-de-rosa-ou-pode-usar-este-fundo-para-qualquer-impressao-design-para-qualquer-post-design-para-fundo-ou-banner-web-ou-fundo-quadrado-fundo-de-fundo-gr%C3%A1tis-foto.jpg');
+  background-size: auto 220vh;
+  font-family: Arial;
+  height: 100vh
+}
+
+.menu {
+  background-color: white;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+a {
+  color: #F08080;
+  text-decoration: none;
+}
+
+.site-subtitle,
+.site-title {
+  color: #F18286;
+  text-align: center;
+}
+
+.site-subtitle {
+  font-style: italic;
+}
