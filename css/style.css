@@ -1,12 +1,49 @@
+/*reset do css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p1/5247862-fundo-de-rosa-ou-pode-usar-este-fundo-para-qualquer-impressao-design-para-qualquer-post-design-para-fundo-ou-banner-web-ou-fundo-quadrado-fundo-de-fundo-gr%C3%A1tis-foto.jpg');
+  background-image: url('../img/fundo.jpeg');
   background-size: auto 220vh;
   font-family: Arial;
-  height: 100vh
+  height: 100vh;
+  font-size: 12px;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 .menu ul {
@@ -16,6 +53,11 @@ body {
 
 .menu li {
   list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
 }
 
 a {
@@ -29,6 +71,15 @@ a {
   text-align: center;
 }
 
+.site-title {
+  font-size: 4em;
+}
+
 .site-subtitle {
   font-style: italic;
+}
+
+.img-portifolio {
+  height: 180px;
+  width: 180px;
 }
