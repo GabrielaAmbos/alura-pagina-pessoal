@@ -1,8 +1,8 @@
 /*reset do css*/
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -33,17 +33,17 @@ body {
 }
 
 header {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
 }
 
 .menu {
   background-color: white;
   position: fixed;
-  width: 100vw;
   top: 0;
+  width: 100vw;
 }
 
 .menu ul {
@@ -72,17 +72,18 @@ a {
 }
 
 .site-title {
-  font-size: 4em;
   font-family: 'Mali', cursive;
+  font-size: 4em;
 }
 
 .site-subtitle {
-  font-style: italic;
   font-family: 'Nanum Gothic', sans-serif;
+  font-style: italic;
 }
 
 .portfolio {
   padding: 2em;
+  height: 100vh;
 }
 
 .portfolio h2 {
@@ -91,11 +92,44 @@ a {
   margin-bottom: 1em;
 }
 
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
+  justify-content: center;
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    align-content: center;
+    grid-template-columns: repeat(3, 260px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 400px);
+    height: calc(100vh - 4em - 48px);
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
 
 .img-portfolio {
-  height: 180px;
-  width: 180px;
+  height: 280px;
+  width: 280px;
+  object-fit: cover;
+  border-radius: 20%;
 }
+
+
 
 
 
