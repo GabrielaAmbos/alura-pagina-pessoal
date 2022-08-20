@@ -8,7 +8,7 @@
 body {
   background-image: url('../img/fundo.jpeg');
   background-size: auto 220vh;
-  font-family: Arial;
+  font-family: 'Hind Siliguri', sans-serif;
   height: 100vh;
   font-size: 12px;
 }
@@ -73,13 +73,30 @@ a {
 
 .site-title {
   font-size: 4em;
+  font-family: 'Mali', cursive;
 }
 
 .site-subtitle {
   font-style: italic;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
-.img-portifolio {
+.portfolio {
+  padding: 2em;
+}
+
+.portfolio h2 {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}
+
+
+.img-portfolio {
   height: 180px;
   width: 180px;
 }
+
+
+
+
