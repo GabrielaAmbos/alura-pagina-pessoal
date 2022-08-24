@@ -8,22 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Hind+Siliguri&family=Mali&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/db87b6324a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav class="menu">
+        <nav class="menu" id="menu">
           <ul>
+            <li><a href="#titulo"><i title="home" class="fa-solid fa-house"></i></li></a>
             <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
-        <div>
+        <div class="titulo" id="titulo">
           <h1 class="site-title">Gabriela Manica Ambos</h1>
           <h2 class="site-subtitle">QA Analyst</h2>
       </div>
       </header>
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <h2>Portfólio</h2>
         <div class="grid">
           <figure>
@@ -44,5 +46,15 @@
           </figure>
         </div>
       </section> 
+      <section class="contato" id="contato">
+        <h2>Contato</h2>
+        <div class="grid icons">
+          <a target="_blank" href="https://github.com/GabrielaAmbos/" rel="noreferrer noopener"><i title="github" class="fa-brands fa-github"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/gabriela-ambos/" rel="noreferrer noopener"><i title="linkedin" class="fa-brands fa-linkedin"></i></a>
+          <a target="_blank" href="https://www.instagram.com/gabrielaambos/" rel="noreferrer noopener"><i title="instagram" class="fa-brands fa-instagram"></i></a>
+          <a target="_blank" href="https://medium.com/@gabrielaambos" rel="noreferrer noopener"><i title="medium" class="fa-brands fa-medium"></i></a>
+          <a href="mailto:gabrielaambos15@gmail.com" rel="noreferrer noopener"><i title="email" class="fa-solid fa-envelope"></i></a>
+        </div>
+      </section>
 </body>
 </html>
